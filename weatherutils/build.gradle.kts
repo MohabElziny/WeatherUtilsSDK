@@ -27,7 +27,7 @@ android {
                 "proguard-rules.pro"
             )
 
-            buildConfigField("String", "VERSION_NAME", "\"1.0.9\"")
+            buildConfigField("String", "VERSION_NAME", "\"1.0.0\"")
         }
     }
 
@@ -58,7 +58,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.mohab"
                 artifactId = "weatherutils"
-                version = "1.0.9"
+                version = "1.0.0"
                 from(components["release"])
             }
         }
